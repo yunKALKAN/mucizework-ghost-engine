@@ -1,5 +1,39 @@
-﻿node_modules/
+﻿# 🤖 MZC MUCIZEWORK™ GHOST ENGINE OS - SECURITY SHIELD
+# Core Dependencies
+node_modules/
+jspm_packages/
+web_modules/
+
+# Environment Variables & Secrets (CRITICAL)
 .env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.env
 *.txt
-notepad .env
-.env
+*.pem
+*.key
+
+# Operating System Residue
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.BIN/
+.DS_Store
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# Logs and Diagnostics
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
