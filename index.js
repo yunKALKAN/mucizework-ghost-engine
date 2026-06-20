@@ -10,14 +10,14 @@ const fs = require('fs');
 const path = require('path');
 const axios = require('axios');
 const { Connection } = require('@solana/web3.js');
-require('dotenv').config();
+require('../../config/load-env.cjs');
 
 const CONFIG = {
-    API_PORT: process.env.PORT || 3000,
-    HEALTH_PORT: process.env.HEALTH_PORT || 3001,
-    SOLANA_RPC: process.env.SOLANA_RPC_URL || "https://api.mainnet-beta.solana.com",
-    PRIVY_APP_ID: process.env.PRIVY_APP_ID || "cmqbiwju9002o0ci4iubsgel",
-    PRIVY_APP_SECRET: process.env.PRIVY_APP_SECRET || null,
+    API_PORT: process.env.TELEGRAM_PORT || 3000,
+    HEALTH_PORT: process.env.TELEGRAM_HEALTH_PORT || 3001,
+    SOLANA_RPC: process.env.TELEGRAM_SOLANA_RPC_URL || "https://api.mainnet-beta.solana.com",
+    PRIVY_APP_ID: process.env.TELEGRAM_PRIVY_APP_ID || null,
+    PRIVY_APP_SECRET: process.env.TELEGRAM_PRIVY_APP_SECRET || null,
     LOG_FILE: path.join(__dirname, 'ownership_audit.log')
 };
 
